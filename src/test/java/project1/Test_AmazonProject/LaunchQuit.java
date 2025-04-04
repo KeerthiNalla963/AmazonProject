@@ -17,6 +17,7 @@ public class LaunchQuit
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 		driver.get("https://amazon.in");
+		driver.navigate().refresh();
 	}
 	@AfterMethod
 	public void quit() throws InterruptedException
